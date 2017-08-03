@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Real-time face detection</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="./node_modules/bulma/css/bulma.css">
+  <link rel="stylesheet" href="./node_modules/ionicons/dist/css/ionicons.min.css">
+</head>
+<body>
+  <main>
+    <section class="screen">
+      <div class="filter"></div>
+      <video width="800" height="540" preload autoplay loop muted></video>
+      <canvas width="800" height="540"></canvas>
+    </section>
+
+    <div class="notification is-info content">
+      <button class="delete" onclick="hide()"></button>
+      <h1 class="title is-4">
+        Real-time face detection with  
+        <a href="https://trackingjs.com">Tracking.js</a>
+      </h1>
+
+      <b>About Tracking.js</b> <br>
+      <p>
+         <a href="https://trackingjs.com">Tracking.js</a> is an open source computer vision library, with different computer vision algorithms on board. These algorithms can be used for features like facial detection or color tracking. And all of that in the browser while having a lightweight core.
+      </p>
+     
+      <p>
+      According to the hacker news thread announcing tracking.js, it’s implementation is based on Viola-Jones algorithm, which is one of the most used algorithms for solving the “face detection problem”. Fun fact this algorithm is also used by OpenCV and it allows you to track several types of objects just by changing the training data that is used as an input.
+      </p>
+      <button class="button is-primary is-pulled-left">View project on github</button>
+      <span class="is-pulled-right">
+        <a href="https://github.com/rickdaalhuizen90">
+          <i class="ion-logo-github"></i>
+        </a>
+        <a href="https://www.facebook.com/rickdaalhuizen90">
+          <i class="ion-logo-facebook"></i>
+        </a>
+        <a href="https://codepen.io/rickdaalhuizen90">
+          <i class="ion-logo-codepen"></i>
+        </a>
+      </span>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="./node_modules/tracking/build/tracking-min.js"></script>
+  <script src="./node_modules/tracking/build/data/face-min.js"></script>
+  <script src="./assets/vendors/stats.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>

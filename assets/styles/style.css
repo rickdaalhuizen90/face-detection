@@ -1,0 +1,58 @@
+body, html {
+  background: #C9D6FF; 
+  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); 
+  background: linear-gradient(to right, #E2E2E2, #C9D6FF); 
+}
+
+a {
+	font-weight: 600;
+	text-decoration: none !important;
+}
+a:hover { opacity: 0.8; }
+
+main {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  justify-content: center;
+  width: 100%;
+	height: auto;
+	margin-bottom: 5em;
+}
+
+.screen {
+	position: relative;
+	display: block;
+	margin: 50px auto;
+	width: 720px;
+	height: 540px;
+
+	-webkit-box-shadow: 4px 10px 5px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 10px 5px -8px rgba(0,0,0,0.75);
+	box-shadow: 4px 10px 5px -8px rgba(0,0,0,0.75);
+}
+
+.screen .filter {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+	background: rgba(0, 0, 0, 0.25);
+}
+
+.screen video, canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.notification {
+	position: relative;
+	max-width: 725px !important;
+}
+
+.notification span i {
+  font-size: 1.6em;
+  letter-spacing: 0.5em;
+}
